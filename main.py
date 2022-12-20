@@ -6,7 +6,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get("/time")
+@app.get("/")
 def read_local_time():
     current_time = time.ctime()
     return current_time
